@@ -32,7 +32,7 @@ public class Main {
         
         Usuario ususario = new Usuario(1, "Karlos", "009tuukamo");
         
-        System.out.println(ususario);
+        System.out.println(ususario.getNome());
 
     }
     

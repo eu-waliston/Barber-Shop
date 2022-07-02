@@ -10,7 +10,8 @@ import java.util.Date;
  *
  * @author wes
  */
-public class Pessoa {
+//ABSTRACT evita que o objeto pessoa seja instiaciado em qualquer outro lugar 
+abstract public class Pessoa {
     
     protected int id;
     protected String nome;
