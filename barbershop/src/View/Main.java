@@ -4,11 +4,12 @@
  */
 package View;
 
+import Models.Agendamento;
 import Models.Cliente;
 import Models.Servico;
 import Models.Usuario;
 
-
+//classe meramente feita para testes favor ignorar o arquivo
 
 /**
  *
@@ -33,6 +34,12 @@ public class Main {
         Usuario ususario = new Usuario(1, "Karlos", "009tuukamo");
         
         System.out.println(ususario.getNome());
+        
+        Agendamento aggendamento = new Agendamento(1, cliente, servico, 35, "08/05/2050 09:15");
+        
+        //System.out.println("-----");
+
+        System.out.println(aggendamento.getCliente().getNome());
 
     }
     
