@@ -5,17 +5,25 @@
  */
 package View;
 
+import Controller.LoginController;
+import javax.swing.JOptionPane;
+import javax.swing.JPasswordField;
+import javax.swing.JTextField;
+
 /**
  *
  * @author tiago
  */
 public class Login extends javax.swing.JFrame {
 
+    private final LoginController controller;
+
     /**
      * Creates new form Login
      */
     public Login() {
         initComponents();
+        controller = new LoginController(this);
     }
 
     /**
@@ -95,6 +103,11 @@ public class Login extends javax.swing.JFrame {
 
     private void ButtonEntrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ButtonEntrarActionPerformed
         // TODO add your handling code here:
+        this.controller.fizTarefa();
+        
+        //System.out.println(TextUsuario.getText()); // usuario
+        //System.out.println(TextSenha.getText()); // senha 
+        
     }//GEN-LAST:event_ButtonEntrarActionPerformed
 
     private void TextSenhaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TextSenhaActionPerformed
@@ -146,4 +159,27 @@ public class Login extends javax.swing.JFrame {
     private javax.swing.JPasswordField TextSenha;
     private javax.swing.JTextField TextUsuario;
     // End of variables declaration//GEN-END:variables
+
+    public void exibeMensagem(String mensagem) {
+        JOptionPane.showMessageDialog(null, mensagem);
+       
+    }
+
+    public JPasswordField getTextSenha() {
+        return TextSenha;
+    }
+
+    public void setTextSenha(JPasswordField TextSenha) {
+        this.TextSenha = TextSenha;
+    }
+
+    public JTextField getTextUsuario() {
+        return TextUsuario;
+    }
+
+    public void setTextUsuario(JTextField TextUsuario) {
+        this.TextUsuario = TextUsuario;
+    }
+    
+    
 }
