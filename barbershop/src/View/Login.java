@@ -105,7 +105,8 @@ public class Login extends javax.swing.JFrame {
 
     private void ButtonEntrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ButtonEntrarActionPerformed
         // TODO add your handling code here:
-        this.controller.fizTarefa();
+        //this.controller.fizTarefa();
+        this.controller.entrarNoSistema();
         
         //System.out.println(TextUsuario.getText()); // usuario
         //System.out.println(TextSenha.getText()); // senha 
